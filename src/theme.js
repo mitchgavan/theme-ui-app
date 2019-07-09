@@ -22,23 +22,23 @@ export default {
   },
   colors: {
     text: '#392a25',
-    background: '#fff',
-    muted: '#f9f4f1',
+    muted: '#aaaaaa',
+    background: '#f8f8f8',
+    foreground: '#ffffff',
     primary: '#92b955',
     secondary: '#9f8a6d',
   },
   space,
   breakpoints,
   styles: {
-    Header: {
-      // references values in `theme.colors`
-      color: 'header.text',
-      bg: 'header.background',
+    Layout: {
+      color: 'text',
+      backgroundColor: 'background',
+      lineHeight: 'body',
     },
     Container: {
       maxWidth: 1160,
-      px: 3,
-      py: 0,
+      padding: 0,
     },
   },
 };
