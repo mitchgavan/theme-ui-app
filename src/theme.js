@@ -11,9 +11,8 @@ space.large = space[3];
 
 export default {
   fonts: {
-    main: 'Raleway, sans-serif',
-    body: 'Roboto, sans-serif',
-    heading: '"Great Vibes", cursive',
+    body: 'Georgia, Cambria, "Times New Roman", Times, serif',
+    heading: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48],
   lineHeights: {
@@ -34,11 +33,12 @@ export default {
     Layout: {
       color: 'text',
       backgroundColor: 'background',
+      fontFamily: 'body',
       lineHeight: 'body',
     },
     Container: {
       maxWidth: 1160,
-      padding: 0,
+      padding: 3,
     },
   },
 };
