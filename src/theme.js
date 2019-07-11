@@ -24,6 +24,7 @@ export default {
     body: 1.5,
     heading: 1.125,
   },
+  initialColorMode: 'light',
   colors: {
     text: '#392a25',
     muted: '#aaaaaa',
