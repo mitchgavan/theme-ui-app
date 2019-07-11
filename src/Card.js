@@ -58,7 +58,7 @@ const Card = () => (
         py: 2, // shorthand for defining padding-top and padding-bottom
         textDecoration: 'none',
         textTransform: 'uppercase',
-        '&:hover, &:focus': { opacity: 0.75 },
+        '&:hover, &:focus': { backgroundColor: 'secondary' },
       }}
     >
       Read more
