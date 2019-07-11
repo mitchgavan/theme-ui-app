@@ -4,9 +4,9 @@ import { jsx } from 'theme-ui';
 const Card = () => (
   <div
     sx={{
-      backgroundColor: 'foreground', // picks up value from `theme.colors.foreground`
+      backgroundColor: 'foreground',
       borderRadius: 4,
-      fontSize: 4, // picks up value from `theme.fontSizes[4]`
+      fontSize: 4,
       margin: 3,
       padding: 3,
     }}
@@ -14,8 +14,8 @@ const Card = () => (
     <h2
       sx={{
         fontFamily: 'heading',
-        fontWeight: 'bold',
-        fontSize: [3, 4], // picks up value from `theme.fontSizes[4]`
+        fontWeight: 'heading',
+        fontSize: [3, 4, 5],
         margin: 0,
       }}
     >
@@ -24,9 +24,9 @@ const Card = () => (
     <div
       sx={{
         fontFamily: 'heading',
-        fontWeight: 'bold',
-        fontSize: [1, 2], // picks up value from `theme.fontSizes[4]`
-        color: 'muted', // picks up value from `theme.colors.primary`
+        fontWeight: 'heading',
+        fontSize: [1, 2],
+        color: 'muted',
         marginBottom: 2,
       }}
     >
@@ -34,14 +34,16 @@ const Card = () => (
     </div>
     <p
       sx={{
-        fontSize: [1, 2], // picks up value from `theme.fontSizes[4]`
+        fontSize: [1, 2],
         marginTop: 0,
         marginBottom: 3,
       }}
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a dui erat. Vivamus malesuada facilisis est, sit amet interdum turpis feugiat id.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a dui
+      erat. Vivamus malesuada facilisis est, sit amet interdum turpis feugiat
+      id.
     </p>
-    <a 
+    <a
       href="/"
       sx={{
         backgroundColor: 'primary',
@@ -49,11 +51,11 @@ const Card = () => (
         color: 'foreground',
         display: 'inline-block',
         fontFamily: 'heading',
-        fontSize: [0, 1], // picks up value from `theme.fontSizes[4]`
+        fontSize: [0, 1],
         fontWeight: 'bold',
         marginBottom: 1,
-        px: 3,
-        py: 2,
+        px: 3, // shorthand for defining padding-left and padding-right
+        py: 2, // shorthand for defining padding-top and padding-bottom
         textDecoration: 'none',
         textTransform: 'uppercase',
         '&:hover, &:focus': { opacity: 0.75 },

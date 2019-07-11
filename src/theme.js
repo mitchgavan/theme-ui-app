@@ -12,9 +12,14 @@ space.large = space[3];
 export default {
   fonts: {
     body: 'Georgia, Cambria, "Times New Roman", Times, serif',
-    heading: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    heading:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48],
+  fontWeights: {
+    body: 400,
+    heading: 700,
+  },
   lineHeights: {
     body: 1.5,
     heading: 1.125,
@@ -26,6 +31,14 @@ export default {
     foreground: '#ffffff',
     primary: '#92b955',
     secondary: '#9f8a6d',
+    modes: {
+      dark: {
+        text: '#ffffff',
+        background: '#111111',
+        foreground: '#333333',
+        primary: '#1da1f2',
+      },
+    },
   },
   space,
   breakpoints,
